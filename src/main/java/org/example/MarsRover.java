@@ -15,6 +15,7 @@ public class MarsRover {
         switch (command) {
             case "M":
                 moveFoward();
+                break;
             case "L":
                 turnLeft();
                 break;
