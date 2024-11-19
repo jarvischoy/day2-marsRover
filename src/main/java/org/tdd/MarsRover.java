@@ -3,10 +3,7 @@ package org.tdd;
 import org.tdd.location.Location;
 import org.tdd.orientation.Direction;
 import org.tdd.orientation.Orientation;
-import org.tdd.roverCommand.Command;
-import org.tdd.roverCommand.MoveForwardCommand;
-import org.tdd.roverCommand.TurnLeftCommand;
-import org.tdd.roverCommand.TurnRightCommand;
+import org.tdd.roverCommand.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,6 +20,7 @@ public class MarsRover {
         commandMap.put("M", new MoveForwardCommand());
         commandMap.put("L", new TurnLeftCommand());
         commandMap.put("R", new TurnRightCommand());
+        commandMap.put("B", new MoveBackwardCommand());
     }
 
     public String execCommand(String command) {
