@@ -1,4 +1,6 @@
-package org.tdd;
+package org.tdd.location;
+
+import org.tdd.orientation.Direction;
 
 public class Location {
     private int x;

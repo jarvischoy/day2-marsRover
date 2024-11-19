@@ -1,4 +1,4 @@
-package org.tdd;
+package org.tdd.orientation;
 
 public class Orientation implements Direction {
     private String direction;

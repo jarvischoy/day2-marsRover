@@ -1,4 +1,4 @@
-package org.tdd;
+package org.tdd.orientation;
 
 public interface Direction {
     public void turnRight();
