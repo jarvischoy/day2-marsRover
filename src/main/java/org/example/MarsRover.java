@@ -39,6 +39,9 @@ public class MarsRover {
             case "S":
                 y--;
                 break;
+            case "W":
+                x--;
+                break;
             default:
                 break;
         }
