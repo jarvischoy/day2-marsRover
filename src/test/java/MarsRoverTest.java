@@ -159,6 +159,7 @@ public class MarsRoverTest {
         // Given
         MarsRover rover = new MarsRover();
         rover.execCommand("R");
+        rover.execCommand("R");
 
         // When
         String response = rover.execCommand("M");
