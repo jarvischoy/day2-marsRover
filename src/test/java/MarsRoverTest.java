@@ -192,4 +192,62 @@ public class MarsRoverTest {
         assertEquals("-1:0:W", report);
     }
 
+    @Test
+    public void should_return_0_minus1_N_when_move_backward_given_0_0_N(){
+        // Given
+        MarsRover rover = new MarsRover();
+
+        // When
+        String response = rover.execCommand("B");
+        String report = rover.getStatus();
+
+        // Then
+        assertEquals("0:-1:N", report);
+    }
+
+    @Test
+    public void should_return_minus1_0_E_when_move_backward_given_0_0_E(){
+        // Given
+        MarsRover rover = new MarsRover();
+        rover.execCommand("R");
+
+        // When
+        String response = rover.execCommand("B");
+        String report = rover.getStatus();
+
+        // Then
+        assertEquals("-1:0:E", report);
+    }
+
+    @Test
+    public void should_return_0_1_S_when_move_backward_given_0_0_S(){
+        // Given
+        MarsRover rover = new MarsRover();
+        rover.execCommand("R");
+        rover.execCommand("R");
+
+        // When
+        String response = rover.execCommand("B");
+        String report = rover.getStatus();
+
+        // Then
+        assertEquals("0:1:S", report);
+    }
+
+    @Test
+    public void should_return_1_0_W_when_move_backward_given_0_0_W(){
+        // Given
+        MarsRover rover = new MarsRover();
+        rover.execCommand("R");
+        rover.execCommand("R");
+        rover.execCommand("R");
+
+        // When
+        String response = rover.execCommand("B");
+        String report = rover.getStatus();
+
+        // Then
+        assertEquals("1:0:W", report);
+    }
+
 }
