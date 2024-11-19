@@ -17,7 +17,7 @@ public class MarsRover {
         this.orientation = new Orientation();
         this.location = new Location(orientation);
         this.commandMap = new HashMap<>();
-        commandMap.put("M", new MoveForwardCommand());
+        commandMap.put("F", new MoveForwardCommand());
         commandMap.put("L", new TurnLeftCommand());
         commandMap.put("R", new TurnRightCommand());
         commandMap.put("B", new MoveBackwardCommand());
