@@ -13,6 +13,8 @@ public class MarsRover {
 
     public String execCommand(String command) {
         switch (command) {
+            case "M":
+                moveFoward();
             case "L":
                 turnLeft();
                 break;
