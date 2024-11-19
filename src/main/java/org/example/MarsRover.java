@@ -16,10 +16,23 @@ public class MarsRover {
             case "L":
                 turnLeft();
                 break;
+            case "R":
+                turnRight();
+                break;
             default:
                 break;
         }
         return "0:0:" + direction;
+    }
+
+    private void turnRight() {
+        switch (direction) {
+            case "N":
+                direction = "E";
+                break;
+            default:
+                break;
+        }
     }
 
     public void turnLeft() {
