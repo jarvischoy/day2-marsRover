@@ -25,6 +25,16 @@ public class MarsRover {
         return "0:0:" + direction;
     }
 
+    private void moveFoward() {
+        switch (direction) {
+            case "N":
+                y++;
+                break;
+            default:
+                break;
+        }
+    }
+
     private void turnRight() {
         switch (direction) {
             case "N":
