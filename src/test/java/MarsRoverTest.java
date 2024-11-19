@@ -15,6 +15,13 @@ public class MarsRoverTest {
     }
 
     @Test
+    public void should_return_0_0_N_when_init_marsRover(){
+        MarsRover rover = new MarsRover();
+        String report = rover.getStatus();
+        assertEquals("0:0:N", report);
+    }
+
+    @Test
     public void should_face_west_when_orient_north_and_turn_left(){
         // Given
         MarsRover rover = new MarsRover();
