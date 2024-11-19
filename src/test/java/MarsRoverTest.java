@@ -26,7 +26,7 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
 
         // When
-        String response = rover.execCommand("L");
+        rover.execCommand("L");
         String report = rover.getStatus();
 
         // Then
@@ -39,7 +39,7 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
 
         // When
-        String response = rover.execCommand("R");
+        rover.execCommand("R");
         String report = rover.getStatus();
 
         // Then
@@ -53,7 +53,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("L");
+        rover.execCommand("L");
         String report = rover.getStatus();
 
         // Then
@@ -68,7 +68,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("R");
+        rover.execCommand("R");
         String report = rover.getStatus();
 
         // Then
@@ -83,7 +83,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("L");
+        rover.execCommand("L");
         String report = rover.getStatus();
 
         // Then
@@ -98,7 +98,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("R");
+        rover.execCommand("R");
         String report = rover.getStatus();
 
         // Then
@@ -112,7 +112,7 @@ public class MarsRoverTest {
         rover.execCommand("L");
 
         // When
-        String response = rover.execCommand("L");
+        rover.execCommand("L");
         String report = rover.getStatus();
 
         // Then
@@ -126,7 +126,7 @@ public class MarsRoverTest {
         rover.execCommand("L");
 
         // When
-        String response = rover.execCommand("R");
+        rover.execCommand("R");
         String report = rover.getStatus();
 
         // Then
@@ -139,7 +139,7 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
 
         // When
-        String response = rover.execCommand("F");
+        rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -153,7 +153,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("F");
+        rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -168,7 +168,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("F");
+        rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -184,7 +184,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("F");
+        rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -197,7 +197,7 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
 
         // When
-        String response = rover.execCommand("B");
+        rover.execCommand("B");
         String report = rover.getStatus();
 
         // Then
@@ -211,7 +211,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("B");
+        rover.execCommand("B");
         String report = rover.getStatus();
 
         // Then
@@ -226,7 +226,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("B");
+        rover.execCommand("B");
         String report = rover.getStatus();
 
         // Then
@@ -242,7 +242,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("B");
+        rover.execCommand("B");
         String report = rover.getStatus();
 
         // Then

@@ -11,8 +11,11 @@ public class CommandProcessor {
     }
 
      public void processCommands(String command) {
-        // split the command string into individual commands and stream them into running the execCommand method
-        Arrays.stream(command.split("")).forEach(marsRover::execCommand);
+        Arrays.stream(command.split(""))
+                .forEach(cmd -> {
+                    marsRover.execCommand(cmd);
+                    marsRover.getStatus();
+                });
      }
 
 }

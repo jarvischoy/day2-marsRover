@@ -23,12 +23,11 @@ public class MarsRover {
         commandMap.put("B", new MoveBackwardCommand());
     }
 
-    public String execCommand(String command) {
+    public void execCommand(String command) {
         Command cmd = commandMap.get(command);
         if (cmd != null) {
             cmd.execute(this);
         }
-        return getStatus();
     }
 
     public Location getLocation() {
