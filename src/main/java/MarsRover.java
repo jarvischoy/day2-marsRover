@@ -1,5 +1,3 @@
-package org.example;
-
 public class MarsRover {
     private int x;
     private int y;
