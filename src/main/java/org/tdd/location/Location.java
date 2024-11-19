@@ -27,8 +27,6 @@ public class Location {
             case "W":
                 x--;
                 break;
-            default:
-                break;
         }
     }
 
@@ -45,8 +43,6 @@ public class Location {
                 break;
             case "W":
                 x++;
-                break;
-            default:
                 break;
         }
     }

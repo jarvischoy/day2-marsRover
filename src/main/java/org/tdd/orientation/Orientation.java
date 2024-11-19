@@ -22,8 +22,6 @@ public class Orientation implements Direction {
             case "W":
                 direction = "N";
                 break;
-            default:
-                break;
         }
     }
 
@@ -41,8 +39,6 @@ public class Orientation implements Direction {
                 break;
             case "E":
                 direction = "N";
-                break;
-            default:
                 break;
         }
     }
