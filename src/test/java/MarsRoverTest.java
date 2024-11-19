@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import org.tdd.CommandProcessor;
 import org.tdd.MarsRover;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -138,7 +139,7 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
 
         // When
-        String response = rover.execCommand("M");
+        String response = rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -152,7 +153,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("M");
+        String response = rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -167,7 +168,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("M");
+        String response = rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -183,7 +184,7 @@ public class MarsRoverTest {
         rover.execCommand("R");
 
         // When
-        String response = rover.execCommand("M");
+        String response = rover.execCommand("F");
         String report = rover.getStatus();
 
         // Then
@@ -246,6 +247,20 @@ public class MarsRoverTest {
 
         // Then
         assertEquals("1:0:W", report);
+    }
+
+    @Test
+    public void shuold_return_0_3_N_when_move_forward_given_0_0_N_and_command_FFF(){
+        // Given
+        MarsRover rover = new MarsRover();
+        CommandProcessor commandProcessor = new CommandProcessor(rover);
+
+        // When
+        commandProcessor.processCommands("FFB");
+        String report = rover.getStatus();
+
+        // Then
+        assertEquals("0:1:N", report);
     }
 
 }
