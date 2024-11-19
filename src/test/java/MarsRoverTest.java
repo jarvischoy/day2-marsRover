@@ -128,7 +128,7 @@ public class MarsRoverTest {
     }
 
     @Test
-    public void should_move_foward_to_0_1_when_orient_north_and_move_foward(){
+    public void should_move_forward_to_0_1_when_orient_north_and_move_forward_given_0_0(){
         // Given
         MarsRover rover = new MarsRover();
 
