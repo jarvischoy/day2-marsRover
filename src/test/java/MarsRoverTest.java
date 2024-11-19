@@ -139,4 +139,18 @@ public class MarsRoverTest {
         // Then
         assertEquals("0:1:N", report);
     }
+
+    @Test
+    public void should_move_forward_to_1_0_when_orient_east_and_move_forward_given_0_0(){
+        // Given
+        MarsRover rover = new MarsRover();
+        rover.execCommand("R");
+
+        // When
+        String response = rover.execCommand("M");
+        String report = rover.getStatus();
+
+        // Then
+        assertEquals("1:0:E", report);
+    }
 }
