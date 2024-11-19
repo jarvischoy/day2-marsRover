@@ -128,7 +128,7 @@ public class MarsRoverTest {
     }
 
     @Test
-    public void should_move_forward_to_0_1_when_orient_north_and_move_forward_given_0_0(){
+    public void should_return_0_1_N_when_move_forward_given_0_0_N(){
         // Given
         MarsRover rover = new MarsRover();
 
@@ -141,7 +141,7 @@ public class MarsRoverTest {
     }
 
     @Test
-    public void should_move_forward_to_1_0_when_orient_east_and_move_forward_given_0_0(){
+    public void should_return_1_0_E_when_move_forward_given_0_0_E(){
         // Given
         MarsRover rover = new MarsRover();
         rover.execCommand("R");
