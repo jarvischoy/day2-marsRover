@@ -250,7 +250,7 @@ public class MarsRoverTest {
     }
 
     @Test
-    public void shuold_return_0_3_N_when_move_forward_given_0_0_N_and_command_FFF(){
+    public void shuold_return_0_1_N_when_move_forward_given_0_0_N_and_command_FFF(){
         // Given
         MarsRover rover = new MarsRover();
         CommandProcessor commandProcessor = new CommandProcessor(rover);
