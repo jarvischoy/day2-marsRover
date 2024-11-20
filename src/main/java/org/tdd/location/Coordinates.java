@@ -2,12 +2,12 @@ package org.tdd.location;
 
 import org.tdd.orientation.Direction;
 
-public class Location {
+public class Coordinates {
     private int x;
     private int y;
     private final Direction orientation;
 
-    public Location(Direction orientation) {
+    public Coordinates(Direction orientation) {
         this.x = 0;
         this.y = 0;
         this.orientation = orientation;
