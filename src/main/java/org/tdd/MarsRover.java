@@ -30,7 +30,7 @@ public class MarsRover {
         }
     }
 
-    public Coordinates getLocation() {
+    public Coordinates getCoords() {
         return coordinates;
     }
 
